@@ -1,0 +1,140 @@
+#slideshow {
+	width: 980px;
+	height: 517px;
+	margin: 1em auto;
+	overflow: hidden;
+	position: relative;
+	background: url(../img/background.jpg) no-repeat;
+}
+
+#slideshow-wrapper {
+	width: 9800px;
+	height: 428px;
+	position: relative;
+	background: #000;
+}
+
+#slideshow-wrapper div.slide {
+	width: 980px;
+	height: 428px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	
+}
+
+#slideshow-wrapper div.slide div.slide-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 193px;
+	height: 428px;
+	z-index: 2;
+}
+
+#slideshow-wrapper div.slide div.slide-left img {
+	position: absolute;
+	top: 40px;
+	right: -100px;
+}
+
+#slideshow-wrapper div.slide div.slide-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 787px;
+	height: 428px;
+	z-index: 1;
+}
+
+#slideshow-wrapper div.slide img {
+	display: block;
+}
+
+#slideshow-wrapper div.slide div.slide-right div.notice {
+	width: 323px;
+	height: 147px;
+	background: url(../img/label.png) no-repeat;
+	font: 16px "Times New Roman", Times, serif;
+	color: #222;
+	position: absolute;
+	top: 50%;
+	margin-top: -78px;
+	right: 100px;
+}
+
+#slideshow-wrapper div.slide div.slide-right div.notice h4 {
+	margin: 0 auto;
+	width: 70%;
+	padding-top: 25px;
+	font-size: 1.9em;
+	font-weight: normal;
+	color: #447234;
+}
+
+#slideshow-wrapper div.slide div.slide-right div.notice p {
+	margin: 0 auto;
+	width: 60%;
+	font-style: italic;
+	font-size: 1.1em;
+	padding-top: 8px;
+}
+
+#slideshow-thumbs {
+	width: 980px;
+	height: 101px;
+	position: relative;
+}
+
+#slideshow-thumbs a {
+	float: left;
+	width: 98px;
+	height: 101px;
+	text-align: center;
+	line-height: 101px;
+	color: #333;
+	text-decoration: none;
+	font-size: 20px;
+	background: #ebebeb;
+}
+
+
+#slideshow-thumbs #slideshow-cursor {
+	width: 90px;
+	height: 101px;
+	background: url(../img/selection.png) no-repeat;
+	position: absolute;
+	top: -13px;
+	left: 0;
+	z-index: 20;
+	display: none;
+}
+
+#slideshow #previous,
+#slideshow #next {
+	width: 58px;
+	height: 114px;
+	display: block;
+	position: absolute;
+	text-indent: -1000em;
+	z-index: 10;
+}
+
+#slideshow #previous {
+	top: 40%;
+	left: 0;
+	margin-top: -57px;
+	background: url(../img/arrow-sx.png) no-repeat;
+}
+
+#slideshow #next {
+	top: 40%;
+	right: 0;
+	margin-top: -57px;
+	background: url(../img/arrow-dx.png) no-repeat;
+}
+
+
+
+	
